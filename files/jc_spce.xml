@@ -1,0 +1,27 @@
+<ForceField>
+ <!--
+ Ion Parameters to be used with SPC/E from Joung and Cheatham, DOI: 10.1021/jp8001614
+ -->
+ <AtomTypes>
+  <Type name="jc_001" class="Li+" element="Li" mass="6.94100" def="Li" desc="lithium ion"/>
+  <Type name="jc_002" class="Na+" element="Na" mass="22.98977" def="Na" desc="sodium ion"/>
+  <Type name="jc_003" class="K+" element="K" mass="39.0983" def="K" desc="potassium ion"/>
+  <Type name="jc_004" class="Rb+" element="Rb" mass="85.4678" def="Rb" desc="Rubidium ion"/>
+  <Type name="jc_005" class="Cs+" element="Cs" mass="132.9055" def="Cs" desc="cesium ion"/>
+  <Type name="jc_006" class="F-" element="F" mass="18.9984" def="F" desc="Fluorine ion"/>
+  <Type name="jc_007" class="Cl-" element="Cl" mass="35.4530" def="Cl" desc="chlorine ion"/>
+  <Type name="jc_008" class="Br-" element="Br" mass="79.904" def="Br" desc="Bromine ion"/>
+  <Type name="jc_009" class="I-" element="I" mass="126.9045" def="I" desc="Iodine ion"/>
+ </AtomTypes>
+ <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+  <Atom type="jc_001" charge="1.000" sigma="0.1408" epsilon="1.4088973"/>
+  <Atom type="jc_002" charge="1.000" sigma="0.2159" epsilon="1.4754533"/>
+  <Atom type="jc_003" charge="1.000" sigma="0.2838" epsilon="1.7978874"/>
+  <Atom type="jc_004" charge="1.000" sigma="0.3095" epsilon="1.8623135"/>
+  <Atom type="jc_005" charge="1.000" sigma="0.3601" epsilon="0.3759596"/>
+  <Atom type="jc_006" charge="-1.000" sigma="0.4022" epsilon="0.0309637"/>
+  <Atom type="jc_007" charge="-1.000" sigma="0.4831" epsilon="0.0534924"/>
+  <Atom type="jc_008" charge="-1.000" sigma="0.4902" epsilon="0.1127948"/>
+  <Atom type="jc_009" charge="-1.000" sigma="0.5201" epsilon="0.1790104"/>
+ </NonbondedForce>
+</ForceField>
