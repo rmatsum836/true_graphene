@@ -41,6 +41,7 @@ def calc_number_density(gro_file, trj_file, top_file, area,
     resnames = np.unique([x.name for x in
                com_trj.topology.residues])
     rho_list = list()
+    res_list = list()
     
     for resname in resnames:
         sliced = com_trj.topology.select('resname {}'.format(resname))
@@ -84,7 +85,8 @@ def calc_number_density(gro_file, trj_file, top_file, area,
         rho = np.divide(rho, trj_slice.n_frames * area *
                 2 / n_bins)
         rho_list.append(rho)
+        res_list.append(resname)
 
     bin_list = bins[:-1]
     
-    return(rho_list, bin_list)
+    return (rho_list, bin_list, res_list)
