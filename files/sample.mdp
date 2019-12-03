@@ -10,10 +10,10 @@ nstenergy   = 1000       ; save energies every 1.0 ps
 nstlog      = 1000       ; update log file every 1.0 ps
 ; Bond parameters
 continuation            = yes        ; first dynamics run
-;constraints             = all-bonds
-;constraint-algorithm    = Lincs
-;lincs_iter              = 2
-;lincs_order             = 6
+constraints             = all-bonds
+constraint-algorithm    = Lincs
+lincs_iter              = 2
+lincs_order             = 6
 ; Neighborsearching
 cutoff-scheme   = Verlet
 ns_type         = grid      ; search neighboring grid cells
