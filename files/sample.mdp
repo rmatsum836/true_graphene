@@ -1,11 +1,10 @@
 title       =il-methanol  NVT equilibration 
 ; Run parameters
 integrator  = md        ; leap-frog integrator
-nsteps      = 2500000     ; 2 * 50000 = 100 ps
-dt          = 0.001     ; 2 fs
+nsteps      = 2500000     ; 1 * 2500000 = 2.5 ns
+dt          = 0.001     ; 1 fs
 ; Output control
-nstxout     = 5000       ; save coordinates every 1.0 ps
-nstvout     = 0       ; save velocities every 1.0 ps
+nstxout     = 5000       ; save coordinates every 5.0 ps
 nstenergy   = 1000       ; save energies every 1.0 ps
 nstlog      = 1000       ; update log file every 1.0 ps
 ; Bond parameters
@@ -18,8 +17,8 @@ lincs_order             = 6
 cutoff-scheme   = Verlet
 ns_type         = grid      ; search neighboring grid cells
 nstlist         = 10        ; 20 fs, largely irrelevant with Verlet
-rcoulomb        = 1.2       ; short-range electrostatic cutoff (in nm)
-rvdw            = 1.2       ; short-range van der Waals cutoff (in nm)
+rcoulomb        = 1.4       ; short-range electrostatic cutoff (in nm)
+rvdw            = 1.4       ; short-range van der Waals cutoff (in nm)
 ; Freezegroups
 freezegrps      = RES
 freezedim       = Y Y Y 
