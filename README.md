@@ -4,16 +4,11 @@ A Transparent, Reproducible, Usable by Others, Extensible (TRUE) simulation work
 slit pore.
 
 ## How is This Workflow TRUE?
-All of the files needed to build and run this simulation are contained within this workflow.
-Additionally, the Python functions and classes to initialize and parametrize the system are freely
-available on GitHub, making the workflow transparent.  Because all of the files and code are freely
-available, any user should be able to run this simulation and get similar results, making this
-workflow reproducible.
-
-Any user of this worklow is
-also free to change any of the system or simulation parameters.  For instance, the temperature this
-simulation is run at can easily be changed within the GROMACS mdp files contained in this repository.
-Thus making the workflow usable by others and extensible.
+This is a transparent workflow, as all files (scripts, simulation input files, force field information) are
+contained within this repository and available for anyone to use.  `true_graphene` is reproducible because
+the explicit steps to set up and run the simulation are contained within `graphene-pore.ipynb`.  This
+workflow is extensible, as the Python objects used to initialize the graphene slit pore system are
+sufficiently documented for anyone to modify the simulation parameters.
 
 ![graphene_snapshot](https://user-images.githubusercontent.com/25011342/70189374-c994ff00-16b8-11ea-827e-3e6b7576359e.png)
 
