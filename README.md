@@ -4,8 +4,8 @@ A Transparent, Reproducible, Usable by Others, Extensible (TRUE) simulation work
 slit pore.
 
 ## Notes
-A small bug in the code that calculates the number density profile was averaged
-was discovered.  The bug has since been fixed and the changes are
+A small bug was discovered in the number density calculation which caused the averaging to be incorrect.
+The bug has since been fixed and the changes are
 reflected in the reference data.  Therefore the figure generated from
 this notebook will slightly differ than the number density figure in the paper.  However, the new number density data is not
 qualititatively different and does not change any of the major
