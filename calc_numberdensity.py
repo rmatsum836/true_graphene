@@ -20,8 +20,8 @@ def calc_number_density(gro_file, trj_file, top_file, area,
         Trajectory to load
     top_file: str
         GROMACS '.top' file to load
-    bin_width: int
-        Width (nm) of numpy histogram bins
+    area: int or flat
+        Area of dimensions not included in number density calculation
     dim: int
         Dimension to calculate number density profile (0,1 or 2)
     box_range: array
@@ -83,7 +83,7 @@ def calc_number_density(gro_file, trj_file, top_file, area,
                             flatten(),bins=n_bins, range=(box_range[0],
                                 box_range[1]))[0]
         rho = np.divide(rho, trj_slice.n_frames * area *
-                2 / n_bins)
+                (bins[1]-bins[0]))
         rho_list.append(rho)
         res_list.append(resname)
 

@@ -3,6 +3,14 @@
 A Transparent, Reproducible, Usable by Others, Extensible (TRUE) simulation workflow of a graphene
 slit pore.
 
+## Notes
+A small bug was discovered in the number density calculation which caused the averaging to be incorrect.
+The bug has since been fixed and the changes are
+reflected in the reference data.  Therefore the figure generated from
+this notebook will slightly differ than the number density figure in the paper.  However, the new number density data is not
+qualititatively different and does not change any of the major
+conclusions of the paper.
+
 ## How is This Workflow TRUE?
 All of the files needed to build and run this simulation are contained within this workflow.
 Additionally, the Python functions and classes to initialize and parametrize the system are freely
